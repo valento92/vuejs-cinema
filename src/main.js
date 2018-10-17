@@ -28,12 +28,13 @@ new Vue({
       data: function () {
         return {
           movies: [
-            { title: 'Pulp Fiction'},
-            { title: 'Home Alone'},
-            { title: 'Austin Powers'}
+            { title: 'Pulp Fiction', genre: genes.CRIME},
+            { title: 'Home Alone', genre: genes.COMEDY},
+            { title: 'Austin Powers', genre: genes.COMEDY}
           ]
         };
-      }
+      },
+      props: ['genre', 'time']
     },
     'movie-filter': {
       data() {
